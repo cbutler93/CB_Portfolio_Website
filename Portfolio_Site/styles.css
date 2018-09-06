@@ -1,0 +1,70 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Lato', 'Arial', sans-serif;
+  color: #1a1a1a;
+}
+
+ul {
+  display: inline-block;
+  list-style: none;
+}
+
+ul li, .cb-logo {
+  display: inline-block;
+}
+
+li a {
+  color: #1a1a1a;
+  text-decoration: none;
+  transition: color 0.2s ease-in;
+}
+
+.nav-container {
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-items {
+  display: flex;
+  flex: 1;
+  font-size: 1.7rem;
+  font-weight: 400;
+  justify-content: flex-end;
+}
+
+.nav-items .item a {
+  margin-left: 50px;
+  transition: color 0.2s ease-in;
+}
+
+.nav-items .item a:hover {
+  color: #145bff;
+}
+
+.nav-logo {
+  width: 30%;
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: #145bff;
+  transition: color 0.2s ease-in;
+}
+
+.nav-logo:hover {
+  color: #1a1a1a;
+}
+
+hr {
+  width: 75%;
+  margin: auto;
+  border: none;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
