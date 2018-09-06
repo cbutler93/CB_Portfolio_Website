@@ -1,3 +1,7 @@
+/* =============== */
+/* GENERAL */
+/* =============== */
+
 html, body {
   margin: 0;
   padding: 0;
@@ -5,25 +9,33 @@ html, body {
   font-size: 16px;
   font-family: 'Lato', 'Arial', sans-serif;
   color: #1a1a1a;
+  background-color: #f0f3f6;
 }
 
-ul {
+/* =============== */
+/* NAV */
+/* =============== */
+
+ul.nav-items > li {
   display: inline-block;
   list-style: none;
 }
 
-ul li, .cb-logo {
+ul li {
   display: inline-block;
 }
 
+/* FLEX Container */
 .nav-container {
-  width: 80%;
+  width: 75%;
   margin: auto;
   padding: 10px;
   display: flex;
   align-items: center;
 }
 
+/* Nested Flex Container */
+/* To move the nav links to the right (end) of the initial flex container */
 .nav-items {
   display: flex;
   flex: 1;
@@ -32,18 +44,14 @@ ul li, .cb-logo {
   justify-content: flex-end;
 }
 
-.nav-container a {
+nav a {
   transition: color 0.2s ease;
 }
 
-.nav-items .item a {
+ul.nav-items a {
   margin-left: 50px;
   color: #1a1a1a;
   text-decoration: none;
-}
-
-.nav-items .item a:hover {
-  color: #145bff;
 }
 
 .nav-logo {
@@ -55,10 +63,18 @@ ul li, .cb-logo {
   color: #145bff;
 }
 
+/* Pseudo Classes */
+ul.nav-items a:hover {
+  color: #145bff;
+}
+
 .nav-logo:hover {
   color: #1a1a1a;
 }
 
+/* =============== */
+/* Aesthetic Elements */
+/* =============== */
 hr {
   width: 75%;
   margin: auto;
@@ -66,3 +82,7 @@ hr {
   height: 1px;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
+
+/* =============== */
+/* CONTENT */
+/* =============== */
