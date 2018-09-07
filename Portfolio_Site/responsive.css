@@ -1,0 +1,11 @@
+@media screen and (max-width: 850px) {
+
+  .nav-items {
+    font-size: 1rem;
+  }
+
+  .nav-logo {
+    font-size: 1.7rem;
+  }
+
+}

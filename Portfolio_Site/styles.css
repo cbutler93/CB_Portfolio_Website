@@ -39,7 +39,7 @@ ul li {
 .nav-items {
   display: flex;
   flex: 1;
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   font-weight: 400;
   justify-content: flex-end;
 }
@@ -58,7 +58,7 @@ ul.nav-items a {
   width: 30%;
   text-align: center;
   font-family: 'Lobster', cursive;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   text-decoration: none;
   color: #145bff;
 }
@@ -84,5 +84,11 @@ hr {
 }
 
 /* =============== */
-/* CONTENT */
+/* MAIN CONTENT */
 /* =============== */
+
+.container {
+}
+
+img {
+}
