@@ -18,6 +18,10 @@ html, body {
   flex-direction: column;
 }
 
+header {
+  order: -999;
+}
+
 /* =============== */
 /* NAV */
 /* =============== */
@@ -128,7 +132,7 @@ hr {
   transition: color 0.2s ease;
 }
 
-.left ul h2 {
+h2 {
   color: #323b42;
   font-size: 2rem;
 }
@@ -205,6 +209,7 @@ footer {
   align-items: center;
   text-align: center;
   border-top: 1px solid rgb(200, 200, 200);
+  order: 999;
 }
 
 footer p {

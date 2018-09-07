@@ -1,0 +1,61 @@
+@media screen and (min-width: 1001px) and (max-width: 1300px) {
+  .project img {
+    width: 210px;
+    height: 140px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+
+  /* Right main container displays first, left container drops below */
+  .right {
+    width: 100%;
+    order: -1;
+  }
+
+  /* Place below 'featured work' container */
+  .left {
+    border-top: 1px solid rgb(200, 200, 200);
+    width: 100%;
+    order: 1;
+  }
+
+  .main-container {
+    flex-direction: column;
+  }
+
+  .featured-work {
+    justify-content: center;
+  }
+
+  .featured-work > * {
+    flex-basis: 100%;
+  }
+
+  .project img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 650px) {
+  .nav-logo {
+    font-size: 1.5rem;
+  }
+
+  h1, h2, .project h2 {
+    font-size: 1.5rem;
+  }
+
+  .left a {
+    font-size: 1rem;
+  }
+
+  .left a:before {
+    background-size: 15px 15px;
+    width: 15px;
+    height: 15px;
+  }
+}
