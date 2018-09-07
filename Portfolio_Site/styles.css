@@ -16,60 +16,52 @@ html, body {
 /* NAV */
 /* =============== */
 
-ul.nav-items > li {
-  display: inline-block;
-  list-style: none;
-}
-
-ul li {
-  display: inline-block;
+nav > * {
+  display: block;
+  margin: 10px 0px;
 }
 
 /* FLEX Container */
-.nav-container {
-  width: 75%;
+#navbar {
+  background: radial-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.95));
+  width: 100%;
   margin: auto;
-  padding: 10px;
+  padding: 20px 0;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-}
-
-/* Nested Flex Container */
-/* To move the nav links to the right (end) of the initial flex container */
-.nav-items {
-  display: flex;
-  flex: 1;
   font-size: 1.3rem;
   font-weight: 400;
-  justify-content: flex-end;
 }
 
 nav a {
-  transition: color 0.2s ease;
-}
-
-ul.nav-items a {
-  margin-left: 50px;
-  color: #1a1a1a;
+  font-family: 'Lobster', cursive;
+  color: #fff;
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 .nav-logo {
   width: 30%;
   text-align: center;
-  font-family: 'Lobster', cursive;
   font-size: 2.3rem;
   text-decoration: none;
   color: #145bff;
 }
 
-/* Pseudo Classes */
-ul.nav-items a:hover {
-  color: #145bff;
+.cb-phrase {
+  font-style: italic;
+  font-size: 1rem;
+  color: rgba(240, 240, 240, 0.9);
+  text-align: center;
+  width: 250px;
 }
 
+/* Pseudo Classes */
+
 .nav-logo:hover {
-  color: #1a1a1a;
+  color: #fff;
 }
 
 /* =============== */
@@ -77,10 +69,10 @@ ul.nav-items a:hover {
 /* =============== */
 hr {
   width: 75%;
-  margin: auto;
+  margin: 20px auto 20px auto;
   border: none;
   height: 1px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0.9), rgba(0, 0, 0, 1));
 }
 
 /* =============== */
@@ -91,4 +83,7 @@ hr {
 }
 
 img {
+  width: 200px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 50px;
 }
