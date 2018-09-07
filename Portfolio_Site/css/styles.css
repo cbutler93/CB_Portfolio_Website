@@ -88,6 +88,10 @@ hr {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0.9), rgba(0, 0, 0, 1));
 }
 
+.left ul hr {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(0, 0, 0, 0.9), rgba(255, 255, 255, 1));
+}
+
 /* =============== */
 /* MAIN CONTENT */
 /* =============== */
@@ -126,13 +130,43 @@ hr {
   transition: color 0.2s ease;
 }
 
+.left ul h2 {
+  color: #323b42;
+  font-size: 2rem;
+}
+
 .left a:hover {
   color: #145bff;
 }
 
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right h1 {
+  margin: 30px 0px;
+}
+
+.featured-work {
+  border: 2px solid goldenrod;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project {
+  border: 1px solid red;
+  display: inline-block;
+  padding: 20px;
+  flex: 1;
+}
+
 /* Add SVG icons before my page links  */
 .github:before {
-  background-image: url('../img/github.svg');
+  background-image: url(../img/github.svg);
   background-size: 25px 25px;
   margin-right: 10px;
   width: 25px;
@@ -142,7 +176,7 @@ hr {
 }
 
 .linkedin:before {
-  background-image: url('../img/linkedin.svg');
+  background-image: url(../img/linkedin.svg);
   background-size: 25px 25px;
   margin-right: 10px;
   width: 25px;
