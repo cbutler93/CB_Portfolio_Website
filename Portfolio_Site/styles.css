@@ -12,6 +12,13 @@ html, body {
   background-color: #f0f3f6;
 }
 
+/* Flex container for all website sections */
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
 /* =============== */
 /* NAV */
 /* =============== */
@@ -21,7 +28,7 @@ nav > * {
   margin: 10px 0px;
 }
 
-/* FLEX Container */
+/* NAV FLEX Container */
 #navbar {
   background: radial-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.95));
   width: 100%;
@@ -58,6 +65,12 @@ nav a {
   width: 250px;
 }
 
+img {
+  width: 175px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 50px;
+}
+
 /* Pseudo Classes */
 
 .nav-logo:hover {
@@ -79,11 +92,80 @@ hr {
 /* MAIN CONTENT */
 /* =============== */
 
-.container {
+/* Main Content Flex Container - Row */
+.main-container {
+  flex: 1;
+  display: flex;
 }
 
-img {
-  width: 200px;
-  border: 2px solid rgb(255, 255, 255);
-  border-radius: 50px;
+.left {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 100%;
+  background-color: rgb(250, 250, 250);
+  border-right: 1px solid rgb(200, 200, 200);
+}
+
+.left ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.left ul li {
+  margin: 30px 0px;
+  text-align: center;
+}
+
+.left a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #1a1a1a;
+  font-weight: 700;
+  transition: color 0.2s ease;
+}
+
+.left a:hover {
+  color: #145bff;
+}
+
+/* Add SVG icons before my page links  */
+.github:before {
+  background-image: url(github.svg);
+  background-size: 25px 25px;
+  margin-right: 10px;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  content: "";
+}
+
+.linkedin:before {
+  background-image: url(linkedin.svg);
+  background-size: 25px 25px;
+  margin-right: 10px;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  content: "";
+}
+
+/* =============== */
+/* FOOTER CONTENT */
+/* =============== */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-top: 1px solid rgb(200, 200, 200);
+}
+
+footer p {
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.7);
+  margin: 10px 0px;
+  padding: 0;
 }
