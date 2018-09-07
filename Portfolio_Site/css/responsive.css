@@ -20,6 +20,7 @@
     order: 1;
   }
 
+  /* Change main flex container from row to column to optimize mobile viewing */
   .main-container {
     flex-direction: column;
   }
