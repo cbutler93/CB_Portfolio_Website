@@ -132,7 +132,7 @@ hr {
 
 /* Add SVG icons before my page links  */
 .github:before {
-  background-image: url(github.svg);
+  background-image: url('../img/github.svg');
   background-size: 25px 25px;
   margin-right: 10px;
   width: 25px;
@@ -142,7 +142,7 @@ hr {
 }
 
 .linkedin:before {
-  background-image: url(linkedin.svg);
+  background-image: url('../img/linkedin.svg');
   background-size: 25px 25px;
   margin-right: 10px;
   width: 25px;
