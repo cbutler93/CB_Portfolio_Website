@@ -202,6 +202,7 @@ h2 {
 /* =============== */
 
 footer {
+  flex-basis: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
